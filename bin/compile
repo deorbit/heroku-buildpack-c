@@ -16,24 +16,11 @@ function indent() {
   esac
 }
 
-echo "Current directory:"
-pwd
-echo "ls"
-ls
-echo "ls BUILD_DIR:"
-ls $BUILD_DIR
-echo "BUILD_DIR:"
-echo $BUILD_DIR
-echo "C_BUILD_DIR"
-echo ${C_BUILD_DIR}
-#echo "Changing directory to BUILD_DIR"
+echo "Changing directory to BUILD_DIR"
 cd $BUILD_DIR
-echo "ls $1/sgp4"
-ls $1/sgp4
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
-cat $1/${C_BUILD_DIR}/configure
 $1/${C_BUILD_DIR}/configure --verbose 2>&1 | indent
 #fi
 
