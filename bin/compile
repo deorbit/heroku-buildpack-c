@@ -33,8 +33,7 @@ ls
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
-#$1/${C_BUILD_DIR}/
-configure --verbose 2>&1 | indent
+$1/${C_BUILD_DIR}/configure --verbose 2>&1 | indent
 #fi
 
 # make
