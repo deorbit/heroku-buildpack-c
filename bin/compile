@@ -28,7 +28,8 @@ echo "C_BUILD_DIR"
 echo ${C_BUILD_DIR}
 echo "Changing directory to BUILD_DIR"
 cd $BUILD_DIR
-echo 
+echo "ls $1"
+ls $1
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
