@@ -5,7 +5,7 @@ set -e
 set -o pipefail
 
 #BUILD_DIR=$1
-BUILD_DIR=$1/${C_BUILD_DIR}
+BUILD_DIR=$1${C_BUILD_DIR}
 CACHE_DIR=$2
 
 function indent() {
@@ -28,12 +28,12 @@ echo "C_BUILD_DIR"
 echo ${C_BUILD_DIR}
 echo "Changing directory to BUILD_DIR"
 cd $BUILD_DIR
-echo "ls $1/sgp4"
-ls $1/sgp4
+echo "ls"
+ls
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
-$1/${C_BUILD_DIR}/configure --verbose 2>&1 | indent
+$1/configure --verbose 2>&1 | indent
 #fi
 
 # make
