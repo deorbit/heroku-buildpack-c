@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-echo ${C_BUILD_DIR}
-cd ${C_BUILD_DIR}
-if [[ -f $1/Makefile  ||  -f $1/configure ]]; then
-  echo "C" && exit 0
-else
-  echo "no" && exit 1
-fi
+#echo ${C_BUILD_DIR}
+#cd $1/${C_BUILD_DIR}
+#if [[ -f Makefile  ||  -f configure ]]; then
+echo "C" && exit 0
+#else
+#  echo "no" && exit 1
+#fi
