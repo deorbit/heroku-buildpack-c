@@ -29,7 +29,7 @@ echo ${C_BUILD_DIR}
 echo "Changing directory to BUILD_DIR"
 cd $BUILD_DIR
 echo "ls $1"
-ls $1
+ls $1/sgp4
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
