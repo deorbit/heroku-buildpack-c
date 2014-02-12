@@ -33,6 +33,7 @@ ls
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
+cat $1/${C_BUILD_DIR}/configure
 $1/${C_BUILD_DIR}/configure --verbose 2>&1 | indent
 #fi
 
