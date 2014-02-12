@@ -16,6 +16,10 @@ function indent() {
   esac
 }
 
+echo "Current directory:"
+pwd
+echo "ls"
+ls
 echo "ls BUILD_DIR:"
 ls $BUILD_DIR
 echo "BUILD_DIR:"
