@@ -16,15 +16,19 @@ function indent() {
   esac
 }
 
+echo "ls BUILD_DIR:"
 ls $BUILD_DIR
+echo "BUILD_DIR:"
 echo $BUILD_DIR
+echo "C_BUILD_DIR"
 echo ${C_BUILD_DIR}
+echo "Changing directory to BUILD_DIR"
 cd ${BUILD_DIR}
 
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
-configure 2>&1 | indent
+$1/${C_BUILD_DIR}/configure 2>&1 | indent
 #fi
 
 # make
