@@ -16,6 +16,7 @@ function indent() {
   esac
 }
 
+echo $BUILD_DIR
 cd $BUILD_DIR
 
 # configure
