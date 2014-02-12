@@ -24,7 +24,7 @@ cd ${BUILD_DIR}
 # configure
 #if [ -f configure ]; then
 echo "-----> Configuring"
-./configure 2>&1 | indent
+${C_BUILD_DIR}/configure 2>&1 | indent
 #fi
 
 # make
