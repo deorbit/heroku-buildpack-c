@@ -22,6 +22,7 @@ cd $BUILD_DIR
 #if [ -f configure ]; then
 echo "-----> Configuring"
 #$1/${C_BUILD_DIR}/configure --verbose 2>&1 | indent
+aclocal
 configure --verbose 2>&1 | indent
 #fi
 
