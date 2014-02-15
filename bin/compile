@@ -24,7 +24,7 @@ echo "-----> Configuring"
 #$1/${C_BUILD_DIR}/configure --verbose 2>&1 | indent
 aclocal
 autoconf
-configure --verbose 2>&1 | indent
+configure 'CXXFLAGS=-std=c++0x' --verbose 2>&1 | indent
 #fi
 
 # make
