@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-source util
+source ./util
 export_env_dir($ENV_DIR)
 
 set -e
