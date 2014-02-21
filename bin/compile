@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
+source util
+export_env_dir($ENV_DIR)
+
 set -e
 set -o pipefail
 
@@ -9,8 +12,6 @@ BUILD_DIR=$1/${C_BUILD_DIR}
 CACHE_DIR=$2
 ENV_DIR=$3
 
-echo "ENV_DIR:"
-echo $ENV_DIR
 
 function indent() {
   c='s/^/       /'
