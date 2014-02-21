@@ -13,7 +13,8 @@ export_env_dir() {
     done
   fi
 }
-export_env_dir($ENV_DIR)
+
+export_env_dir $3
 
 set -e
 set -o pipefail
