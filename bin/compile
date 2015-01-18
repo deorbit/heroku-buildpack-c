@@ -16,7 +16,7 @@ function indent() {
   esac
 }
 
-echo "Changing directory to BUILD_DIR"
+echo "Changing directory to ${BUILD_DIR}"
 cd $BUILD_DIR
 # configure
 #if [ -f configure ]; then
@@ -24,7 +24,7 @@ echo "-----> Configuring"
 #$1/${C_BUILD_DIR}/configure --verbose 2>&1 | indent
 aclocal
 autoconf
-configure 'CXXFLAGS=-std=c++0x' --verbose 2>&1 | indent
+./configure 'CXXFLAGS=-std=c++0x' --verbose 2>&1 | indent
 #fi
 
 # make
